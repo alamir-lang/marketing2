@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كورس التجارة الإلكترونية</title>
+  <style>
+    /* Reset */
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Arial', sans-serif; }
+
+    body { background-color: #f4f6f8; color: #222; line-height:1.6; }
+
+    a { text-decoration:none; color:inherit; }
+
+    header {
+      background-color: #0d1b2a;
+      color:#fff;
+      padding: 20px 50px;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      position: sticky;
+      top:0;
+      z-index: 1000;
+    }
+    header h1 { font-size:28px; color: #fca311; }
+    nav a { margin-left:20px; color:#fff; font-weight:bold; transition:0.3s; }
+    nav a:hover { color:#fca311; }
+
+    section { padding: 80px 20px; }
+    h2 { font-size:36px; margin-bottom:40px; color:#0d1b2a; text-align:center; }
+
+    .whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1612831455546-35f1a51b7d37?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:#fff;
+      padding:0 20px;
+    }
+    .hero h2 { font-size:48px; margin-bottom:20px; }
+    .hero p { font-size:20px; margin-bottom:30px; }
+    .hero a {
+      background-color:#fca311;
+      padding:15px 30px;
+      border-radius:5px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+    .hero a:hover { background-color:#e59400; }
+
+    /* Features / About / Services */
+    .features, .about, .services {
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:30px;
+      max-width:1200px;
+      margin:0 auto;
+    }
+    .card {
+      background-color:#0d1b2a;
+      color:#fff;
+      padding:30px;
+      border-radius:10px;
+      width:300px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align:center;
+    }
+    .card:hover { transform: translateY(-10px); box-shadow:0 10px 25px rgba(0,0,0,0.3); }
+    .card h3 { font-size:28px; margin-bottom:15px; color:#fca311; }
+    .card p { font-size:16px; margin-bottom:10px; }
+
+    /* Pricing Section */
+    .pricing .cards { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+    .pricing .card span { display:block; font-size:32px; margin:20px 0; color:#fca311; font-weight:bold; }
+    .card a { display:inline-block; background-color:#fca311; color:#0d1b2a; padding:10px 20px; border-radius:5px; font-weight:bold; transition:0.3s; }
+    .card a:hover { background-color:#e59400; }
+
+    /* Footer */
+    footer {
+      background-color:#0d1b2a;
+      color:#fff;
+      text-align:center;
+      padding:30px 20px;
+    }
+    footer p { font-size:16px; }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .features, .about, .services, .pricing .cards { flex-direction:column; align-items:center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>كورس التجارة الإلكترونية</h1>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#about">عن الكورس</a>
+      <a href="#services">العروض والخدمات</a>
+      <a href="#pricing">الباقات</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>اتعلم التجارة الإلكترونية من الصفر للاحتراف 💻📚</h2>
+    <p>شرح شامل + تطبيق عملي + دعم مستمر + أسرار منتجات مربحة</p>
+    <a href="#pricing">ابدأ الآن</a>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/201123854442" target="_blank" class="whatsapp-btn">
+    تواصل معنا
+    </a>
+    
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>عن الكورس</h2>
+    <div class="card">
+      <h3>ماذا ستتعلم؟</h3>
+      <p>منصات البيع الإلكتروني، التسويق الرقمي، استراتيجيات البيع، إنشاء متجرك من الصفر</p>
+    </div>
+    <div class="card">
+      <h3>مستوى الكورس</h3>
+      <p>مبتدئ → محترف، مناسب لكل الأعمار، بدون خبرة مسبقة</p>
+    </div>
+    <div class="card">
+      <h3>مدة الكورس</h3>
+      <p>40 ساعة تعليمية + دعم مستمر + تطبيق عملي على منتجات حقيقية</p>
+    </div>
+  </section>
+
+  <!-- Services / Features Section -->
+  <section class="services" id="services">
+    <h2>العروض والخدمات</h2>
+    <div class="card">
+      <h3>ملفات PDF + Guides</h3>
+      <p>ملخصات لكل درس وأدوات جاهزة لتطبيق عملي</p>
+    </div>
+    <div class="card">
+      <h3>دعم مباشر للطلاب</h3>
+      <p>جروب خاص للرد على الأسئلة ومتابعة التقدم</p>
+    </div>
+    <div class="card">
+      <h3>متابعة شخصية</h3>
+      <p>لطلاب VIP، متابعة 1:1 وخطة عمل كاملة</p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing">
+    <h2>اختر باقتك وابدأ رحلتك التعليمية 🚀</h2>
+    <div class="cards">
+      <!-- Level 1 -->
+      <div class="card">
+        <h3>Level 1 – Starter</h3>
+        <p>فيديوهات كاملة</p>
+        <p>أساسيات التجارة الإلكترونية</p>
+        <p>أدوات عملية جاهزة</p>
+        <span>1,000 جنيه</span>
+        <a href="#contact">اشترك الآن</a>
+      </div>
+      <!-- Level 2 -->
+      <div class="card">
+        <h3>Level 2 – Pro 🔥</h3>
+        <p>كل محتوى Level 1</p>
+        <p>ملفات PDF ملخصة</p>
+        <p>جروب دعم مباشر للطلاب</p>
+        <span>1,999 جنيه</span>
+        <a href="#contact">اشترك الآن</a>
+      </div>
+      <!-- Level 3 -->
+      <div class="card">
+        <h3>Level 3 – VIP</h3>
+        <p>كل ما سبق</p>
+        <p>متابعة شخصية 1:1</p>
+        <p>خطة عمل كاملة + شهادة احترافية</p>
+        <span>2,999 جنيه</span>
+        <a href="#contact">اشترك الآن</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form" style="background:#f4f6f8; padding:50px 20px; text-align:center;">
+  <h2 style="color:#0d1b2a; margin-bottom:30px;">تواصل معنا مباشرة</h2>
+  <form id="contactUs" style="max-width:500px; margin:0 auto; display:flex; flex-direction:column; gap:15px;">
+    <input type="text" name="name" placeholder="اسمك" required style="padding:12px; border-radius:5px; border:1px solid #ccc; font-size:16px;">
+    <input type="email" name="email" placeholder="ايميلك" required style="padding:12px; border-radius:5px; border:1px solid #ccc; font-size:16px;">
+    <textarea name="message" placeholder="اكتب رسالتك هنا..." required style="padding:12px; border-radius:5px; border:1px solid #ccc; font-size:16px; resize:none;"></textarea>
+    <button type="submit" style="padding:15px; border:none; border-radius:5px; background-color:#fca311; color:#0d1b2a; font-weight:bold; font-size:18px; cursor:pointer;">إرسال</button>
+  </form>
+</section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact">
+    <p>© 2026 كورس التجارة الإلكترونية | تواصل معنا: info@example.com</p>
+  </footer>
+
+
+</body>
+</html>
